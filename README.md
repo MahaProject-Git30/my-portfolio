@@ -1,16 +1,159 @@
-# React + Vite
+# 🌟 Mahalakshmi Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built using **React.js** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This portfolio showcases my skills, projects, internship experience, and contact information in a clean and professional UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://mahalakshmir-portfolio.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+- Responsive Design
+- Modern UI with Gradient Theme
+- Hero Section
+- About Me Section
+- Skills Section
+- Projects Section with Pagination
+- Contact Form using EmailJS
+- Social Media Links
+- Smooth Hover Effects
+- Mobile Friendly Layout
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+- EmailJS
+- React Icons
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+(Add Screenshot Here)
+
+### 📂 Projects Section
+(Add Screenshot Here)
+
+### 📞 Contact Section
+(Add Screenshot Here)
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-github-username/your-repository-name.git
+```
+
+Move into the project folder:
+
+```bash
+cd your-repository-name
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📧 Contact Form Setup (EmailJS)
+
+This project uses **EmailJS** for sending messages directly from the contact form.
+
+### Install EmailJS
+
+```bash
+npm install @emailjs/browser
+```
+
+### Configure
+
+Replace the following values inside `Contact.jsx`:
+
+```js
+emailjs.send(
+  "YOUR_SERVICE_ID",
+  "YOUR_TEMPLATE_ID",
+  form,
+  "YOUR_PUBLIC_KEY"
+);
+```
+
+---
+
+## 👩‍💻 About Me
+
+I am Mahalakshmi, a MERN Stack Developer passionate about building responsive and user-friendly web applications.
+
+- 🎓 B.Sc Physics Graduate
+- 💻 MERN Full Stack Developer
+- 🌱 React.js Enthusiast
+- 🚀 Frontend & Full Stack Projects
+
+---
+
+## 🔗 Social Links
+
+### GitHub
+https://github.com/maharichu30
+
+### LinkedIn
+https://www.linkedin.com/in/mahalakshmi-r-532a6a2a2/
+
+### Email
+rajmaharichu30@gmail.com
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## ❤️ Thank You
+
+Thank you for visiting my portfolio project.

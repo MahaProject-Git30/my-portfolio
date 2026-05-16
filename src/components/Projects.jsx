@@ -17,7 +17,7 @@ function Projects() {
         "A complete MERN stack vehicle rental platform with user authentication, vehicle booking, admin dashboard, payment flow, and responsive UI design.",
 
       tech:
-        "React JS, Node.js, Express.js, MongoDB, Tailwind CSS, JWT",
+        "React JS, Node.js, Express.js, MongoDB, Tailwind CSS",
 
       live: "https://onlinevehical.netlify.app",
 
@@ -36,7 +36,7 @@ function Projects() {
 
       desc:
         "MERN stack expense tracker application to manage income and expenses with charts, transaction history, authentication, and dashboard analytics.",
-      
+
       tech:
         "React JS, Javascript, Tailwind CSS",
 

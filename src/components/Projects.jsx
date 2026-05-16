@@ -13,6 +13,7 @@ function Projects() {
     // PROJECT 1
     {
       title: "Online Vehicle Rental System",
+
       desc:
         "A complete MERN stack vehicle rental platform with user authentication, vehicle booking, admin dashboard, payment flow, and responsive UI design.",
 
@@ -28,6 +29,8 @@ function Projects() {
         "https://github.com/MahaProject-Git30/vehicle-rental-server",
 
       image: "/images/online.png",
+
+      fullstack: true,
     },
 
     // PROJECT 2
@@ -35,18 +38,19 @@ function Projects() {
       title: "Smart Expense Tracker",
 
       desc:
-        "MERN stack expense tracker application to manage income and expenses with charts, transaction history, authentication, and dashboard analytics.",
+        "Expense tracker application to manage income and expenses with charts, transaction history, and dashboard analytics.",
 
       tech:
-        "React JS, Javascript, Tailwind CSS",
+        "React JS, JavaScript, Tailwind CSS",
 
       live: "https://smartexpensetrac.netlify.app",
 
       frontend:
         "https://github.com/maharichu30/smart-expense-tracker",
 
-
       image: "/images/smartexpense.png",
+
+      fullstack: false,
     },
 
     // PROJECT 3
@@ -54,18 +58,19 @@ function Projects() {
       title: "Invoice Builder",
 
       desc:
-        "A full-stack invoice builder application with responsive design, user authentication, and dynamic invoice generation.",
+        "Invoice builder application with responsive UI and dynamic invoice generation features.",
 
       tech:
-        "React JS, Javascript, Tailwind CSS",
+        "React JS, JavaScript, Tailwind CSS",
 
       live: "https://invoiceformb.netlify.app",
 
       frontend:
         "https://github.com/maharichu30/invoice",
 
-
       image: "/images/invoices.png",
+
+      fullstack: false,
     },
 
   ];
@@ -104,9 +109,8 @@ function Projects() {
           </h2>
 
           <p className="text-gray-200 max-w-2xl mx-auto">
-            Here are some complete MERN stack projects showcasing
-            frontend development, backend APIs, authentication,
-            database management, and responsive UI design.
+            Here are some projects showcasing frontend development,
+            backend APIs, responsive UI design, and full stack applications.
           </p>
 
         </div>
@@ -141,7 +145,7 @@ function Projects() {
 
               <div
                 key={index}
-                className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-500"
+                className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-500 flex flex-col"
               >
 
                 {/* IMAGE */}
@@ -152,7 +156,7 @@ function Projects() {
                 />
 
                 {/* CONTENT */}
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
 
                   {/* TITLE */}
                   <h3 className="text-2xl font-bold">
@@ -160,7 +164,7 @@ function Projects() {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-4 text-gray-200 leading-relaxed text-sm">
+                  <p className="mt-4 text-gray-200 leading-relaxed text-sm flex-grow">
                     {project.desc}
                   </p>
 
@@ -178,40 +182,78 @@ function Projects() {
                   </div>
 
                   {/* BUTTONS */}
-                  <div className="flex flex-wrap gap-3 mt-6">
+                  <div className="mt-6">
 
-                    {/* LIVE */}
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-[#F59E0B] text-black px-4 py-2 rounded-lg font-semibold hover:bg-[#d97706] hover:scale-105 transition duration-300 flex items-center gap-2"
-                    >
-                      <FaExternalLinkAlt />
-                      Live Demo
-                    </a>
+                    {/* FULL STACK PROJECT */}
+                    {project.fullstack ? (
 
-                    {/* FRONTEND */}
-                    <a
-                      href={project.frontend}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black transition duration-300 flex items-center gap-2"
-                    >
-                      <FaGithub />
-                      Frontend
-                    </a>
+                      <div className="grid grid-cols-3 gap-2">
 
-                    {/* BACKEND */}
-                    <a
-                      href={project.backend}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="border border-yellow-400 text-yellow-400 px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300 flex items-center gap-2"
-                    >
-                      <FaGithub />
-                      Backend
-                    </a>
+                        {/* LIVE */}
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#F59E0B] text-black px-2 py-2 rounded-lg font-semibold hover:bg-[#d97706] transition duration-300 flex items-center justify-center gap-2 text-sm"
+                        >
+                          <FaExternalLinkAlt />
+                          Live
+                        </a>
+
+                        {/* FRONTEND */}
+                        <a
+                          href={project.frontend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="border border-white px-2 py-2 rounded-lg hover:bg-white hover:text-black transition duration-300 flex items-center justify-center gap-2 text-sm"
+                        >
+                          <FaGithub />
+                          Frontend
+                        </a>
+
+                        {/* BACKEND */}
+                        <a
+                          href={project.backend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="border border-yellow-400 text-yellow-400 px-2 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300 flex items-center justify-center gap-2 text-sm"
+                        >
+                          <FaGithub />
+                          Backend
+                        </a>
+
+                      </div>
+
+                    ) : (
+
+                      /* FRONTEND PROJECTS */
+                      <div className="grid grid-cols-2 gap-3">
+
+                        {/* LIVE */}
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-[#F59E0B] text-black px-3 py-2 rounded-lg font-semibold hover:bg-[#d97706] transition duration-300 flex items-center justify-center gap-2 text-sm"
+                        >
+                          <FaExternalLinkAlt />
+                          Live Demo
+                        </a>
+
+                        {/* FRONTEND */}
+                        <a
+                          href={project.frontend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="border border-white px-3 py-2 rounded-lg hover:bg-white hover:text-black transition duration-300 flex items-center justify-center gap-2 text-sm"
+                        >
+                          <FaGithub />
+                          Frontend
+                        </a>
+
+                      </div>
+
+                    )}
 
                   </div>
 

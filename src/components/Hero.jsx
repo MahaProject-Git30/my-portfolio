@@ -58,7 +58,7 @@ function Hero() {
 
             {/* Resume */}
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/18FIHVxjPOuvjh2OY9iu3RAL0hJszoWNG/view?usp=drive_link"
               download
               className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 hover:scale-105 transition duration-300 text-center font-semibold"
             >

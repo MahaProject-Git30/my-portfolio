@@ -141,7 +141,7 @@ I am Mahalakshmi, a MERN Stack Developer passionate about building responsive an
 https://github.com/maharichu30
 
 ### LinkedIn
-https://www.linkedin.com/in/mahalakshmi-r-532a6a2a2/
+https://www.linkedin.com/in/mahalakshmir0924
 
 ### Email
 rajmaharichu30@gmail.com

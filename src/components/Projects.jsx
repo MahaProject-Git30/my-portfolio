@@ -15,11 +15,11 @@ function Projects() {
 
       // FRONTEND SOURCE
       frontend:
-        "https://github.com/yourname/vehicle-frontend",
+        "https://github.com/MahaProject-Git30/vehicle-rental-client",
 
       // BACKEND SOURCE
       backend:
-        "https://github.com/yourname/vehicle-backend",
+        "https://github.com/MahaProject-Git30/vehicle-rental-server",
 
       image: "/images/online.png",
 
@@ -52,18 +52,6 @@ function Projects() {
       fullstack: false,
     },
 
-    {
-      title: "Namma Madurai App",
-      desc: "Mobile application for exploring and discovering places in Madurai.",
-      live: " https://nma-app.netlify.app/",
-
-      frontend:
-        "https://github.com/MahaProject-Git30/madurai-app",
-
-      image: "/images/landing-page.jpg",
-
-      fullstack: false,
-    },
   ];
 
   // PAGINATION

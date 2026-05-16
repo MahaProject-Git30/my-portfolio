@@ -36,9 +36,9 @@ function Projects() {
 
       desc:
         "MERN stack expense tracker application to manage income and expenses with charts, transaction history, authentication, and dashboard analytics.",
-
+      
       tech:
-        "React JS, Node.js, Express.js, MongoDB, Chart.js, Tailwind CSS",
+        "React JS, Javascript, Tailwind CSS",
 
       live: "https://smartexpensetrac.netlify.app",
 

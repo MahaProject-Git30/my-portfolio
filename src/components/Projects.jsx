@@ -54,22 +54,6 @@ function Projects() {
 
   ];
 
-  // PAGINATION
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const cardsPerPage = 3;
-
-  const nextSlide = () => {
-    if (currentIndex + cardsPerPage < projects.length) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const prevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
 
   return (
     <section
@@ -89,26 +73,7 @@ function Projects() {
           </p>
         </div>
 
-        {/* Arrow Buttons */}
-        <div className="flex justify-end gap-4 mb-8">
 
-          {/* Left Arrow */}
-          <button
-            onClick={prevSlide}
-            className="bg-white/20 p-3 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300"
-          >
-            <FaChevronLeft />
-          </button>
-
-          {/* Right Arrow */}
-          <button
-            onClick={nextSlide}
-            className="bg-white/20 p-3 rounded-full hover:bg-yellow-400 hover:text-black transition duration-300"
-          >
-            <FaChevronRight />
-          </button>
-
-        </div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
